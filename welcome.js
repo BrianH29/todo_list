@@ -6,8 +6,14 @@ const greet = document.querySelector(".js-greetings");
 const USER_LS = "currentUser";
 const SHOW = "showing";
 
+function saveUser(input) {
+  localStorage.setItem(USER_LS, input);
+}
 function handleSubmit(e) {
   e.preventDefault();
+  const value = input.value;
+  saveUser(value);
+  printGreet(value);
 }
 
 function askForName() {
