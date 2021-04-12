@@ -10,18 +10,32 @@
 </head>
 
 <body>
-    <div class="js-clock">
-        <h1 class="js-time"></h1>
-    </div>
+    <section class="center">
+        <div class="js-clock clock">
+            <h3 class="js-time"></h3>
+        </div>
 
-    <form class="js-form">
-        <input type="text" placeholder="what is your name?">
-    </form>
-    <h4 class="js-greetings"></h4>
+        <form class="js-form form">
+            <input type="text" placeholder="what is your name?">
+        </form>
+        <h4 class="js-greetings greetings"></h4>
 
+        <form class="js-todo">
+            <input type="text" placeholder="what are you up to tody?">
+        </form>
+        <div class="js-todoList">
+            <ul id="showList"></ul>
+        </div>
+
+        <span class="js-weather"></span>
+    </section>
 
     <script src="clock.js"></script>
     <script src="welcome.js"></script>
+    <script src="todoList.js"></script>
+    <script src="bg.js"></script>
+    <script src="weather.js"></script>
+
 </body>
 
 </html>
